@@ -295,6 +295,8 @@ def main():
 
         ## If we're also writing wordcount files, we need to write the .tsv file.
 
+        totalwordsinvol = 0
+
         if wordcountflag:
                         
             outlist = sorted(masterdict.items(), key = lambda x: x[1], reverse = True)
